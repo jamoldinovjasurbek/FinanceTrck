@@ -1,0 +1,8 @@
+  self.monthselector=QComboBox()
+        self.monthselector.addItems(['ALL']+self.get_month_list())
+        self.monthselector.activated[str].connect(self.getValues_bymonth)
+        self.monthselector.setStyleSheet("border:1px solid gray;font: 10pt Arial;  background-color: white; color:black;")
+        self.automaticBanner=QLabel("Automatic categories")
+        self.automaticBanner.setStyleSheet("font-size: 12pt Arial;  background-color: white; color:black;")
+        self.manualBanner=QLabel(r"Manual catergories")
+        self.manualBanner.setStyleSheet("font-size: 12pt Arial;  background-color: white; color:black;")
